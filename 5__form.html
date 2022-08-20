@@ -1,0 +1,90 @@
+<!-- FORMS(formalar) asosam foydalanuvchidan malum bir malumotni olib serverga qayta ishlash uchun ishlatiladi   -->
+<!doctype html>
+<html>
+    <head>
+        <title>forms(formalar)</title>
+        <style>
+            #username {
+                font-weight: bolder;
+                margin-top: 5px;
+            }
+            #password {
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            #email{
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            #date {
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            #talaba {
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            #ishchi {
+                font-weight: bolder;
+                margin-top: 5px;
+            }
+            #erkak {
+                font-weight: bolder;
+                margin-top: 5px;
+            }
+            #ayol {
+                font-weight: bolder;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="./kinolar_com.html" method="GET" target="_blank">
+        <div id="username">
+            <label for="username">username</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div id="password">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div id="email">
+            <label for="email">emailingiz</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div id="date">
+            <label for="date">tug'ilgan sanangiz</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div id='talaba'>
+            <label for="talaba">talaba</label>
+            <input type="checkbox" name='talaba' id="talaba"> 
+        </div>
+        <div id="ishchi">
+            <label for="ishchi">ishchi</label>
+            <input type="checkbox" name="ishchi" id="ischi">
+        </div>
+        <hr>
+        <div id="erkak">
+            <label for="erkak">erkak</label>
+            <input type="radio" name="jins" id="erkak">
+        </div>
+        <div id="ayol">
+            <label for="ayol">ayol</label>
+            <input type="radio" name="jins" id="ayol">
+        </div>
+        <hr>
+        <label for="passport">passport</label>
+        <input type="file" name="passport" id="passport"><br><br>
+        <label for="tajriba">tajribangiz (yilda) </label>
+        <select name="tajriba" id="tajriba">
+            <option value="0"> tajribam yo'q</option>
+            <option value="1">1 yildan kam</option>
+            <option value="2">1 yildan ko'p</option>
+        </select><br><br>
+        <label for="haqida">siz haqingizda</label><br><br>
+        <textarea id="haqida" name="haqida" rows="5" cols="20"></textarea><br><br>
+        <button type="submit" style="margin-left: 200px; margin-top: 5px;">register</button>
+        </form>
+    </body>
+</html>
